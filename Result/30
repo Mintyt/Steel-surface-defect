@@ -1,0 +1,109 @@
+runcell('训练', 'F:/DIP/test/try1.py')
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_4 (Conv2D)            (None, 222, 222, 32)      896       
+_________________________________________________________________
+max_pooling2d_4 (MaxPooling2 (None, 111, 111, 32)      0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 109, 109, 64)      18496     
+_________________________________________________________________
+max_pooling2d_5 (MaxPooling2 (None, 54, 54, 64)        0         
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 52, 52, 128)       73856     
+_________________________________________________________________
+max_pooling2d_6 (MaxPooling2 (None, 26, 26, 128)       0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 24, 24, 128)       147584    
+_________________________________________________________________
+max_pooling2d_7 (MaxPooling2 (None, 12, 12, 128)       0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 18432)             0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 18432)             0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               2359424   
+_________________________________________________________________
+dense_3 (Dense)              (None, 11)                1419      
+=================================================================
+Total params: 2,601,675
+Trainable params: 2,601,675
+Non-trainable params: 0
+_________________________________________________________________
+{"class_name": "Sequential", "config": {"name": "sequential_1", "layers": [{"class_name": "InputLayer", "config": {"batch_input_shape": [null, 224, 224, 3], "dtype": "float32", "sparse": false, "ragged": false, "name": "conv2d_4_input"}}, {"class_name": "Conv2D", "config": {"name": "conv2d_4", "trainable": true, "batch_input_shape": [null, 224, 224, 3], "dtype": "float32", "filters": 32, "kernel_size": [3, 3], "strides": [1, 1], "padding": "valid", "data_format": "channels_last", "dilation_rate": [1, 1], "groups": 1, "activation": "relu", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}, {"class_name": "MaxPooling2D", "config": {"name": "max_pooling2d_4", "trainable": true, "dtype": "float32", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2], "data_format": "channels_last"}}, {"class_name": "Conv2D", "config": {"name": "conv2d_5", "trainable": true, "dtype": "float32", "filters": 64, "kernel_size": [3, 3], "strides": [1, 1], "padding": "valid", "data_format": "channels_last", "dilation_rate": [1, 1], "groups": 1, "activation": "relu", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}, {"class_name": "MaxPooling2D", "config": {"name": "max_pooling2d_5", "trainable": true, "dtype": "float32", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2], "data_format": "channels_last"}}, {"class_name": "Conv2D", "config": {"name": "conv2d_6", "trainable": true, "dtype": "float32", "filters": 128, "kernel_size": [3, 3], "strides": [1, 1], "padding": "valid", "data_format": "channels_last", "dilation_rate": [1, 1], "groups": 1, "activation": "relu", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}, {"class_name": "MaxPooling2D", "config": {"name": "max_pooling2d_6", "trainable": true, "dtype": "float32", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2], "data_format": "channels_last"}}, {"class_name": "Conv2D", "config": {"name": "conv2d_7", "trainable": true, "dtype": "float32", "filters": 128, "kernel_size": [3, 3], "strides": [1, 1], "padding": "valid", "data_format": "channels_last", "dilation_rate": [1, 1], "groups": 1, "activation": "relu", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}, {"class_name": "MaxPooling2D", "config": {"name": "max_pooling2d_7", "trainable": true, "dtype": "float32", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2], "data_format": "channels_last"}}, {"class_name": "Flatten", "config": {"name": "flatten_1", "trainable": true, "dtype": "float32", "data_format": "channels_last"}}, {"class_name": "Dropout", "config": {"name": "dropout_1", "trainable": true, "dtype": "float32", "rate": 0.2, "noise_shape": null, "seed": null}}, {"class_name": "Dense", "config": {"name": "dense_2", "trainable": true, "dtype": "float32", "units": 128, "activation": "relu", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}, {"class_name": "Dense", "config": {"name": "dense_3", "trainable": true, "dtype": "float32", "units": 11, "activation": "softmax", "use_bias": true, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "bias_initializer": {"class_name": "Zeros", "config": {}}, "kernel_regularizer": null, "bias_regularizer": null, "activity_regularizer": null, "kernel_constraint": null, "bias_constraint": null}}]}, "keras_version": "2.4.0", "backend": "tensorflow"}
+G:\ANA\lib\site-packages\tensorflow\python\keras\engine\training.py:1844: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+  warnings.warn('`Model.fit_generator` is deprecated and '
+Epoch 1/30
+100/100 [==============================] - 161s 2s/step - loss: 2.0657 - acc: 0.4030 - val_loss: 1.6891 - val_acc: 0.4719
+Epoch 2/30
+100/100 [==============================] - 126s 1s/step - loss: 1.5930 - acc: 0.4972 - val_loss: 1.1083 - val_acc: 0.6325
+Epoch 3/30
+100/100 [==============================] - 118s 1s/step - loss: 1.1034 - acc: 0.6300 - val_loss: 0.8597 - val_acc: 0.7519
+Epoch 4/30
+100/100 [==============================] - 122s 1s/step - loss: 0.9388 - acc: 0.7095 - val_loss: 0.7781 - val_acc: 0.7513
+Epoch 5/30
+100/100 [==============================] - 118s 1s/step - loss: 0.8165 - acc: 0.7241 - val_loss: 0.8132 - val_acc: 0.7450
+Epoch 6/30
+100/100 [==============================] - 129s 1s/step - loss: 0.7599 - acc: 0.7478 - val_loss: 0.7053 - val_acc: 0.7500
+Epoch 7/30
+100/100 [==============================] - 130s 1s/step - loss: 0.7072 - acc: 0.7734 - val_loss: 0.6513 - val_acc: 0.7700
+Epoch 8/30
+100/100 [==============================] - 129s 1s/step - loss: 0.6559 - acc: 0.7750 - val_loss: 0.7334 - val_acc: 0.7412
+Epoch 9/30
+100/100 [==============================] - 130s 1s/step - loss: 0.5974 - acc: 0.8102 - val_loss: 0.6131 - val_acc: 0.7894
+Epoch 10/30
+100/100 [==============================] - 129s 1s/step - loss: 0.5911 - acc: 0.8127 - val_loss: 0.5447 - val_acc: 0.8087
+Epoch 11/30
+100/100 [==============================] - 131s 1s/step - loss: 0.5792 - acc: 0.8345 - val_loss: 0.6385 - val_acc: 0.7569
+Epoch 12/30
+100/100 [==============================] - 128s 1s/step - loss: 0.5324 - acc: 0.8342 - val_loss: 0.6164 - val_acc: 0.8275
+Epoch 13/30
+100/100 [==============================] - 128s 1s/step - loss: 0.4809 - acc: 0.8440 - val_loss: 0.3824 - val_acc: 0.8894
+Epoch 14/30
+100/100 [==============================] - 124s 1s/step - loss: 0.3764 - acc: 0.8892 - val_loss: 0.3978 - val_acc: 0.8825
+Epoch 15/30
+100/100 [==============================] - 123s 1s/step - loss: 0.3311 - acc: 0.9052 - val_loss: 0.3549 - val_acc: 0.8888
+Epoch 16/30
+100/100 [==============================] - 118s 1s/step - loss: 0.3114 - acc: 0.9155 - val_loss: 0.4213 - val_acc: 0.8706
+Epoch 17/30
+100/100 [==============================] - 119s 1s/step - loss: 0.3243 - acc: 0.8959 - val_loss: 0.3275 - val_acc: 0.8981
+Epoch 18/30
+100/100 [==============================] - 116s 1s/step - loss: 0.2751 - acc: 0.9218 - val_loss: 0.3013 - val_acc: 0.9150
+Epoch 19/30
+100/100 [==============================] - 120s 1s/step - loss: 0.2901 - acc: 0.9232 - val_loss: 0.3643 - val_acc: 0.8900
+Epoch 20/30
+100/100 [==============================] - 114s 1s/step - loss: 0.2819 - acc: 0.9163 - val_loss: 0.3077 - val_acc: 0.9069
+Epoch 21/30
+100/100 [==============================] - 118s 1s/step - loss: 0.2538 - acc: 0.9331 - val_loss: 0.2994 - val_acc: 0.9162
+Epoch 22/30
+100/100 [==============================] - 113s 1s/step - loss: 0.4309 - acc: 0.8944 - val_loss: 0.2816 - val_acc: 0.9181
+Epoch 23/30
+100/100 [==============================] - 120s 1s/step - loss: 0.2076 - acc: 0.9385 - val_loss: 0.3610 - val_acc: 0.8781
+Epoch 24/30
+100/100 [==============================] - 114s 1s/step - loss: 0.1869 - acc: 0.9506 - val_loss: 0.2826 - val_acc: 0.9144
+Epoch 25/30
+100/100 [==============================] - 120s 1s/step - loss: 0.1705 - acc: 0.9500 - val_loss: 0.2610 - val_acc: 0.9219
+Epoch 26/30
+100/100 [==============================] - 114s 1s/step - loss: 0.2282 - acc: 0.9335 - val_loss: 0.3868 - val_acc: 0.8894
+Epoch 27/30
+100/100 [==============================] - 115s 1s/step - loss: 0.2585 - acc: 0.9250 - val_loss: 0.3882 - val_acc: 0.8875
+Epoch 28/30
+100/100 [==============================] - 118s 1s/step - loss: 0.1832 - acc: 0.9357 - val_loss: 0.3207 - val_acc: 0.9031
+Epoch 29/30
+100/100 [==============================] - 114s 1s/step - loss: 0.1952 - acc: 0.9399 - val_loss: 0.2744 - val_acc: 0.9269
+Epoch 30/30
+100/100 [==============================] - 119s 1s/step - loss: 0.1606 - acc: 0.9552 - val_loss: 0.2907 - val_acc: 0.9256
+
+runcell(7, 'F:/DIP/test/try1.py')
+
+
+
+图表现在默认显示于绘图窗格上。要想让其也在中断行中显示，请在绘图窗格选项菜单中取消勾选“禁用行内绘图”。 
+
+
+ 
+
+runcell(8, 'F:/DIP/test/try1.py')
+80/80 [==============================] - 17s 211ms/step - loss: 0.2798 - acc: 0.9285
+[0.27984872460365295, 0.928515613079071]
